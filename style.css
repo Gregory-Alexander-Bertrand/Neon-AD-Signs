@@ -105,3 +105,30 @@ body {
     0 0 15px;
     border: none;
 }
+
+.wrapper {
+    font-size: 40px;
+    background-color: #570029;
+    margin: 10px 10px;
+    width: 100px;
+    color: thistle;
+    text-shadow: 0 0 10px,
+    0 0 20px,
+    0 0 30px,
+    0 0 40px;
+    border: double orange 4px;
+}
+
+.letter:nth-of-type(1) {
+    animation: blink .5s linear infinite;
+}
+ 
+.letter:nth-of-type(7) {
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}
